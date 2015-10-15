@@ -2,7 +2,7 @@ define([
 	'jquery',
 	'backbone',
 	'underscore',
-	'text!/template/word.html'
+	'text!../../template/word.html'
 ], function ($,Backbone, _, word) {
 		var word = Backbone.View.extend({
 				//$("#container").css()

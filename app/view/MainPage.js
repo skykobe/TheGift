@@ -2,7 +2,7 @@ define([
 	'jquery',
 	'backbone',
 	'underscore',
-	'text!/template/main.html',
+	'text!../../template/main.html',
 	'css/semantic/dist/semantic.min'
 ], function ($, Backbone, _, page) {
 		var main = Backbone.View.extend({
