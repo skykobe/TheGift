@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>老婆仔~~~~</title>
+    <link rel="stylesheet" href="css/semantic/dist/semantic.css">
+    <link rel="stylesheet" href="css/TheGift.css">
+</head>
+<body>
+<div class="ui left vertical inverted sidebar labeled icon menu" id="menu">
+    <a href="#home" class="item">
+        <i class="home icon"></i>
+        主页
+    </a>
+    <a href="#word" class="item">
+        <i class="heart icon"></i>
+        话
+    </a>
+    <a href="#photo" class="item">
+        <i class="photo icon"></i>
+        PHOTO
+    </a>
+</div>
+<div id="container" class="pusher">
+    <div class="ui basic inverted red basic button" id="LW">
+            登录
+    </div>
+
+    <div class="ui small modal" id="log_window">
+        <i class="close icon"></i>
+
+        <div class="ui form segment">
+            <div class="field">
+                <label>用户名</label>
+                <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    <input type="text" id="user_name" placeholder="怎么叫我？">
+                </div>
+            </div>
+
+            <div class="field">
+                <label>密码</label>
+                <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    <input type="text" id="user_pass" placeholder="你知道的">
+                </div>
+            </div>
+
+            <div class="ui animated button" id="log">
+                <div class="visible content">登录</div>
+                <div class="hidden content">GO!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui modal" id="error">
+        <i class="close icon"></i>
+        <div class="ui form segment">
+            <h2 style="text-align: center">蠢材！！你登录失败 </h2>
+        </div>
+    </div>
+</div>
+
+</body>
+<script data-main="app.js" src="app/lib/require.js/require.js"></script>
+</html>
