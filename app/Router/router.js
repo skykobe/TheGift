@@ -18,11 +18,18 @@ define([
 			},
 			ShowMainPage: function () {
 				$("#log_window").modal('hide');
-				new main()
+				if(this.main) {
+					this.main.render()
+				} else {
+					this.main = new main()
+				}
 			},
 			ShowWord: function () {
-				$("#log_window").modal('hide');
-				new word()
+				if(this.word) {
+					this.word.render()
+				} else {
+					this.word = new word()
+				}
 			}
 	})
 	return router

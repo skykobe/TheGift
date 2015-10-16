@@ -9,6 +9,7 @@ define([
 				el: '#container',
 				initialize: function () {
 						this.render()
+					this.MainShow();
 				},
 				render: function () {
 						//$("body").css("background","url()")
@@ -19,7 +20,7 @@ define([
 						})
 						var template = _.template(page)
 						this.$el.html(template)
-						this.MainShow();
+						//this.MainShow();
 						//setTimeout(this.calculTime,2000)
 				},
 				events: {
@@ -61,11 +62,11 @@ define([
 						$("#hour").html(time_hour+'时');
 						$("#min").html(time_min+'分');
 						$("#sec").html(time_sec+'秒');
-						if(x%6 == 0) {
+						if(x%8 == 0) {
 							$("#one").css('display','none')
-							$("#one").attr("src","/resource/"+add_1+".jpg").fadeIn(1200)
+							$("#one").attr("src","resource/"+add_1+".jpg").fadeIn(1200)
 							$("#two").css('display','none')
-							$("#two").attr("src","/resource/"+add_2+".jpg").fadeIn(1200)
+							$("#two").attr("src","resource/"+add_2+".jpg").fadeIn(1200)
 							if(add_1 == 1 && add_2 == 2) {
 								add_1 = 3
 								add_2 = 4
