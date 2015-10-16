@@ -33,7 +33,7 @@ define([
 					$("#menu").sidebar('show');
 				},
 				MainShow: function () {
-					var add_1 = 3, add_2 = 4,x = 1
+					var add_1 = '3', add_2 = '4',x = 1
 					show()
 					function show() {
 						var now = new Date(),time_year = 0, time_hour = now.getHours(),
@@ -68,11 +68,11 @@ define([
 							$("#two").css('display','none')
 							$("#two").attr("src","resource/"+add_2+".jpg").fadeIn(1200)
 							if(add_1 == 1 && add_2 == 2) {
-								add_1 = 3
-								add_2 = 4
+								add_1 = '3';
+								add_2 = '4';
 							} else {
-								add_1 = 1
-								add_2 = 2
+								add_1 = '1';
+								add_2 = '2';
 							}
 						}
 						x++
