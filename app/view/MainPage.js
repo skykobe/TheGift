@@ -64,7 +64,7 @@ define([
 						$("#sec").html(time_sec+'秒');
 						if(x%8 == 0) {
 							$("#one").css('display','none')
-							$("#one").attr("src","resource/"+add_1+".jpg").fadeIn(1200)
+							$("#one").attr("src","resource/"+add_1+".JPG").fadeIn(1200)
 							$("#two").css('display','none')
 							$("#two").attr("src","resource/"+add_2+".jpg").fadeIn(1200)
 							if(add_1 == 1 && add_2 == 2) {
