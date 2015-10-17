@@ -3,13 +3,15 @@ define([
 	'jquery',
 	'css/semantic/dist/semantic',
 	'app/view/MainPage',
-	'app/view/myWord'
-], function (Backbone, $, x, main,word) {
+	'app/view/myWord',
+	'app/view/thePhoto'
+], function (Backbone, $, x, main, word, photo) {
 	var router = Backbone.Router.extend({
 			routes: {
 				"": "ShowLog",
 				"mainPage": "ShowMainPage",
-				"word": "ShowWord"
+				"word": "ShowWord",
+				"photo": "ShowPhoto"
 		  },
 			ShowLog: function () {
 				$('#LW').click(function () {
@@ -29,6 +31,13 @@ define([
 					this.word.render()
 				} else {
 					this.word = new word()
+				}
+			},
+			ShowPhoto: function () {
+				if(this.photo) {
+					this.photo.render()
+				} else {
+					this.photo = new photo()
 				}
 			}
 	})
