@@ -16,7 +16,7 @@ define([
 						$("#container").css({
 							"background":"url(resource/mainPage.jpg)",
 							"background-size": "100%",
-							"height":"102.1%"
+							"height":"102.4%"
 						})
 						var template = _.template(page)
 						this.$el.html(template)
