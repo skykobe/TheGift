@@ -11,18 +11,30 @@ define([
 					this.render()
 				},
 				render: function () {
-					$("#container").css('background','url(resource/word.jpg)')
 					var template = _.template(wordPage)
 					this.$el.html(template)
+					/*var height1 = document.body.scrollHeight
+					console.log(height1)*/
+					$("#container").css({
+						'background':'url(resource/word.jpg)',
+						"background-size": "100%",
+						"height":"350%"
+					})
 				},
 				events: {
 					'click #btn_menu': 'ShowMenu'
 				},
 				ShowMenu: function () {
-					$("#container").css({
-						"height":"100%"
+					$("#menu").sidebar({
+						'scrollLock': true,
+						'onHide': function () {
+							$("#container").css({
+								"height": "350%"
+							})
+						}
 					})
 					$("#menu").sidebar('show');
+
 				}
 		})
 		return word

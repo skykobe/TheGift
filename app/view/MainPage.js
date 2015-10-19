@@ -16,7 +16,7 @@ define([
 						$("#container").css({
 							"background":"url(resource/mainPage.jpg)",
 							"background-size": "100%",
-							"height":"101.4%"
+							"height":"102.1%"
 						})
 						var template = _.template(page)
 						this.$el.html(template)
@@ -59,7 +59,7 @@ define([
 						}
 						time_year += day;
 						$("#data").html(time_year+'天');
-						$("#hour").html(time_hour+'时');
+						$("#hour").html(time_hour+'小时');
 						$("#min").html(time_min+'分');
 						$("#sec").html(time_sec+'秒');
 						if(x%8 == 0) {
