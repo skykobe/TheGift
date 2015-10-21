@@ -18,23 +18,26 @@ define([
 					$("#container").css({
 						'background':'url(resource/word.jpg)',
 						"background-size": "100%",
-						"height":"350%"
+						"height":"450%"
 					})
 				},
 				events: {
-					'click #btn_menu': 'ShowMenu'
+					'click #btn_menu': 'ShowMenu',
+					'click #back': 'BackTotop'
 				},
 				ShowMenu: function () {
 					$("#menu").sidebar({
 						'scrollLock': true,
 						'onHide': function () {
 							$("#container").css({
-								"height": "350%"
+								"height": "450%"
 							})
 						}
 					})
 					$("#menu").sidebar('show');
-
+				},
+				BackTotop: function () {
+					document.body.scrollTop = 0;
 				}
 		})
 		return word
