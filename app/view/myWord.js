@@ -29,9 +29,12 @@ define([
 					$("#menu").sidebar({
 						'scrollLock': true,
 						'onHide': function () {
-							$("#container").css({
-								"height": "450%"
-							})
+							if(location.hash === '#word') {
+								$("#container").css({
+									"height": "450%"
+								})
+								alert('test')
+							}
 						}
 					})
 					$("#menu").sidebar('show');
