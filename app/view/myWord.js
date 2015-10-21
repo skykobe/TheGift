@@ -33,7 +33,6 @@ define([
 								$("#container").css({
 									"height": "450%"
 								})
-								alert('test')
 							}
 						}
 					})
