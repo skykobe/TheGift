@@ -18,13 +18,21 @@ define([
 					this.$el.html(template)
 				},
 				events: {
-					'click #btn_menu': 'ShowMenu'
+					'click #btn_menu': 'ShowMenu',
+					'click #picture': 'ShowPic'
 				},
 				ShowMenu: function () {
 					$("#container").css({
 						"height":"100%"
 					})
 					$("#menu").sidebar('show');
+				},
+				ShowPic: function (record) {
+					var add = record.currentTarget.src
+					var word = record.currentTarget.alt
+					$("#pic").attr('src',add)
+					$("#word").html(word)
+					$("#S").modal('show')
 				}
 		})
 	return photo

@@ -59,3 +59,14 @@ body {
     width: 18%;
     margin: 2px;
 }
+#S {
+    background-color: #000000;
+}
+#picture {
+    width: 80%;
+    cursor: pointer;
+}
+#picture:hover {
+    width: 80.5%;
+    border: 1px solid wheat;
+}

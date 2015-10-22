@@ -18,7 +18,7 @@ define([
 					$("#container").css({
 						'background':'url(resource/word.jpg)',
 						"background-size": "100%",
-						"height":"450%"
+						"height":"400%"
 					})
 				},
 				events: {
@@ -31,7 +31,7 @@ define([
 						'onHide': function () {
 							if(location.hash === '#word') {
 								$("#container").css({
-									"height": "450%"
+									"height": "400%"
 								})
 							}
 						}
