@@ -23,7 +23,8 @@ define([
 				},
 				events: {
 					'click #btn_menu': 'ShowMenu',
-					'click #back': 'BackTotop'
+					'click #back': 'BackTotop',
+					'click #music': 'theMusic'
 				},
 				ShowMenu: function () {
 					$("#menu").sidebar({
@@ -40,6 +41,14 @@ define([
 				},
 				BackTotop: function () {
 					document.body.scrollTop = 0;
+				},
+				theMusic: function () {
+					var music = document.getElementById('audio');
+					if(music.paused) {
+						music.play()
+					} else {
+						music.pause()
+					}
 				}
 		})
 		return word

@@ -16,12 +16,12 @@ require([
 			allowMultiple: true
 		}) /*把所有弹出层都设置为可以遮盖*/
 		$('#log').click(function () {
-			/*if($('#user_name').val() === '老公仔' && $("#user_pass").val() === '622306') {
+			if($('#user_name').val() === '老公仔' && $("#user_pass").val() === '622306') {
 				location.hash = 'mainPage'
-			}*/
-			if($('#user_name').val() === '1' && $("#user_pass").val() === '1') {
+			}
+			/*if($('#user_name').val() === '1' && $("#user_pass").val() === '1') {
 				location.hash = 'mainPage'
-			} else{
+			} */else{
 				$("#error").modal('show')
 			}
 		})

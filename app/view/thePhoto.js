@@ -12,7 +12,8 @@ define([
 				render: function () {
 					$("#container").css({
 						"background":"url(resource/photo.jpg)",
-						"background-size": "100%"
+						"background-size": "100%",
+						"height": '250%'
 					})
 					var template = _.template(thePhoto)
 					this.$el.html(template)
@@ -23,7 +24,7 @@ define([
 				},
 				ShowMenu: function () {
 					$("#container").css({
-						"height":"100%"
+						"height":"250%"
 					})
 					$("#menu").sidebar('show');
 				},
