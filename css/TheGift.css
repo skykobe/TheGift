@@ -4,12 +4,12 @@ body {
     height: 100%;
     width: 100%;
 }
-#error {
+/*#error {
     position: absolute;
     top: 45%;
     left: 65%;
     width: 35%;
-}
+}*/
 #LW {
     position: absolute;
     left: 48%;

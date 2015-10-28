@@ -50,14 +50,14 @@ define([
 						}
 						time_year += 58
 						var mon = now.getMonth()+1
-						for(var i = 1; i <= mon; i++) {
+						for(var i = 1; i < mon; i++) {
 							time_year += month[i]
 						}
 						year = parseInt(now.getFullYear())
 						if((year%4 == 0) || ((year%100 == 0)&&(year%400 == 0)) && mon > 2) {
 							time_year += 1
 						}
-						time_year += day;
+						time_year += day - 1;
 						$("#data").html(time_year+'天');
 						$("#hour").html(time_hour+'小时');
 						$("#min").html(time_min+'分');
