@@ -19,6 +19,7 @@ require([
 			/*if($('#user_name').val() === '老公仔' && $("#user_pass").val() === '622306') {
 				location.hash = 'mainPage'
 			}*/
+			
 			if($('#user_name').val() === '1' && $("#user_pass").val() === '1') {
 				location.hash = 'mainPage'
 			} else{
